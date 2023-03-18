@@ -10,7 +10,10 @@ const Nav = () => {
   0;
   return (
     <nav className={toggle && position}>
-      <img src="../public/omnifood-logo.png" alt="ImageLogo" />
+      <img
+        src="https://roadsit-app.netlify.app/static/media/logo.08d970fd0ddb0af90a9c60fb965e56d2.svg"
+        alt="ImageLogo"
+      />
       <section className="header__navbar">
         {links.map(navLink => {
           const { id, url, text } = navLink;
