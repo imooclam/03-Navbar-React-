@@ -1,0 +1,80 @@
+/* ***************************
+***************************
+
+ 03-  Nav ProJect
+***************************
+*************************** */
+/* if we want to make grid in navbar we have to get container for every column */
+nav {
+  background-color: var(--clr-primary-10);
+  padding-inline: 2.6rem;
+  display: flex;
+  /* grid-template-columns: 1fr 2fr 1fr auto; */
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+  position: relative;
+  /* display: flex;
+  justify-content: space-between; */
+}
+
+.header__navbar {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  gap: 4rem;
+}
+img {
+  max-width: 150px;
+  height: auto;
+}
+.navbar {
+  text-align: center;
+}
+.navbar__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar__link {
+  font-size: 2.5rem;
+  color: #555;
+  text-transform: capitalize;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.navbar__link:hover {
+  color: var(--clr-gold20);
+}
+
+.social-icons {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  font-size: 2.6rem;
+  margin-right: 2rem;
+}
+.social-icons a {
+  color: var(--clr-primary-7);
+}
+
+/* menu icon  for small screen */
+.menuBtnGroup {
+  justify-self: end;
+}
+.menu__icon {
+  cursor: pointer;
+  background: none;
+  border: none;
+  display: none;
+}
+.menu__icon .icon-mobile {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+
+  position: relative;
+
+  z-index: 2;
+}
